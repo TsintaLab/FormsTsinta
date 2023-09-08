@@ -1,6 +1,6 @@
 <?php
 // Incluye la biblioteca TCPDF
-require_once('tcpdf/tcpdf.php');
+require_once('https://raw.githubusercontent.com/tecnickcom/TCPDF/main/tcpdf.php');
 
 // Recupera los datos del formulario
 $nombreCurso = $_POST['nombreCurso'];
