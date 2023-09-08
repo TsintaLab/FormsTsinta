@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Requerimientos de Sesión/Curso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de Requerimientos de Sesión/Curso</h1>
+    <form action="generar_pdf.php" method="post" target="_blank">
+        <label for="nombreCurso">Nombre del curso:</label>
+        <input type="text" id="nombreCurso" name="nombreCurso" value="Comunicación Efectiva"><br><br>
+
+        <label for="nombreInstructor">Nombre del Instructor:</label>
+        <input type="text" id="nombreInstructor" name="nombreInstructor" value="Alfredo Sayas Martínez"><br><br>
+
+        <label for="fechaCurso">Fecha del curso:</label>
+        <input type="date" id="fechaCurso" name="fechaCurso" value="04-06-2023"><br><br>
+
+        <label for="horaCurso">Hora:</label>
+        <input type="text" id="horaCurso" name="horaCurso" value="16:00-17:30 horas"><br><br>
+
+        <label for="lugarCurso">Lugar:</label>
+        <input type="placeholder" id="lugarCurso" name="lugarCurso" value="Sala de la Parroquia de Coatepec"><br><br>
+
+        <label for="numParticipantes">Número de participantes:</label>
+        <input type="number" id="numParticipantes" name="numParticipantes" value="4"><br><br>
+
+        <h2>Indicadores</h2>
+        <h3>MOBILIARIO</h3>
+        <table border="1">
+            <tr>
+                <th>Elemento</th>
+                <th>Cantidad</th>
+                <th>Sí</th>
+                <th>No</th>
+                <th>Observaciones</th>
+            </tr>
+            <tr>
+                <td>Mesas</td>
+                <td><input type="number" name="mobiliarioMesasCantidad" value="1"></td>
+                <td><input type="radio" name="mobiliarioMesas" value="Sí" checked></td>
+                <td><input type="radio" name="mobiliarioMesas" value="No"></td>
+                <td><input type="text" name="mobiliarioMesasObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Sillas</td>
+                <td><input type="number" name="mobiliarioSillasCantidad" value="4"></td>
+                <td><input type="radio" name="mobiliarioSillas" value="Sí" checked></td>
+                <td><input type="radio" name="mobiliarioSillas" value="No"></td>
+                <td><input type="text" name="mobiliarioSillasObservaciones"></td>
+            </tr>
+        </table>
+
+        <h3>EQUIPO</h3>
+        <table border="1">
+            <tr>
+                <th>Elemento</th>
+                <th>Cantidad</th>
+                <th>Sí</th>
+                <th>No</th>
+                <th>Observaciones</th>
+            </tr>
+            <tr>
+                <td>Computadora</td>
+                <td><input type="number" name="equipoComputadoraCantidad" value="1"></td>
+                <td><input type="radio" name="equipoComputadora" value="Sí" checked></td>
+                <td><input type="radio" name="equipoComputadora" value="No"></td>
+                <td><input type="text" name="equipoComputadoraObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Proyector</td>
+                <td><input type="number" name="equipoProyectorCantidad" value="1"></td>
+                <td><input type="radio" name="equipoProyector" value="Sí" checked></td>
+                <td><input type="radio" name="equipoProyector" value="No"></td>
+                <td><input type="text" name="equipoProyectorObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Pantalla</td>
+                <td><input type="number" name="equipoPantallaCantidad" value="1"></td>
+                <td><input type="radio" name="equipoPantalla" value="Sí" checked></td>
+                <td><input type="radio" name="equipoPantalla" value="No"></td>
+                <td><input type="text" name="equipoPantallaObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Bocina</td>
+                <td><input type="number" name="equipoBocinaCantidad" value="1"></td>
+                <td><input type="radio" name="equipoBocina" value="Sí" checked></td>
+                <td><input type="radio" name="equipoBocina" value="No"></td>
+                <td><input type="text" name="equipoBocinaObservaciones"></td>
+            </tr>
+        </table>
+
+        <h3>INSTALACIONES</h3>
+        <table border="1">
+            <tr>
+                <th>Elemento</th>
+                <th>Cantidad</th>
+                <th>Sí</th>
+                <th>No</th>
+                <th>Observaciones</th>
+            </tr>
+            <tr>
+                <td>Sala</td>
+                <td><input type="number" name="instalacionesSalaCantidad" value="1"></td>
+                <td><input type="radio" name="instalacionesSala" value="Sí" checked></td>
+                <td><input type="radio" name="instalacionesSala" value="No"></td>
+                <td><input type="text" name="instalacionesSalaObservaciones"></td>
+            </tr>
+        </table>
+
+        <h3>MATERIALES</h3>
+        <table border="1">
+            <tr>
+                <th>Elemento</th>
+                <th>Cantidad</th>
+                <th>Sí</th>
+                <th>No</th>
+                <th>Observaciones</th>
+            </tr>
+            <tr>
+                <td>Lista de asistencia</td>
+                <td><input type="number" name="materialesListaAsistenciaCantidad" value="1"></td>
+                <td><input type="radio" name="materialesListaAsistencia" value="Sí" checked></td>
+                <td><input type="radio" name="materialesListaAsistencia" value="No"></td>
+                <td><input type="text" name="materialesListaAsistenciaObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Tarjetas</td>
+                <td><input type="number" name="materialesTarjetasCantidad" value="1"></td>
+                <td><input type="radio" name="materialesTarjetas" value="Sí" checked></td>
+                <td><input type="radio" name="materialesTarjetas" value="No"></td>
+                <td><input type="text" name="materialesTarjetasObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Bolígrafos</td>
+                <td><input type="number" name="materialesBoligrafosCantidad" value="1"></td>
+                <td><input type="radio" name="materialesBoligrafos" value="Sí" checked></td>
+                <td><input type="radio" name="materialesBoligrafos" value="No"></td>
+                <td><input type="text" name="materialesBoligrafosObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Plumones</td>
+                <td><input type="number" name="materialesPlumonesCantidad" value="1"></td>
+                <td><input type="radio" name="materialesPlumones" value="Sí" checked></td>
+                <td><input type="radio" name="materialesPlumones" value="No"></td>
+                <td><input type="text" name="materialesPlumonesObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Personificadores</td>
+                <td><input type="number" name="materialesPersonificadoresCantidad" value="1"></td>
+                <td><input type="radio" name="materialesPersonificadores" value="Sí" checked></td>
+                <td><input type="radio" name="materialesPersonificadores" value="No"></td>
+                <td><input type="text" name="materialesPersonificadoresObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Evaluación diagnóstica (cuestionario)</td>
+                <td><input type="number" name="materialesEvaluacionDiagnosticaCantidad" value="1"></td>
+                <td><input type="radio" name="materialesEvaluacionDiagnostica" value="Sí" checked></td>
+                <td><input type="radio" name="materialesEvaluacionDiagnostica" value="No"></td>
+                <td><input type="text" name="materialesEvaluacionDiagnosticaObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Evaluación intermedia (guía de observación)</td>
+                <td><input type="number" name="materialesEvaluacionIntermediaCantidad" value="1"></td>
+                <td><input type="radio" name="materialesEvaluacionIntermedia" value="Sí" checked></td>
+                <td><input type="radio" name="materialesEvaluacionIntermedia" value="No"></td>
+                <td><input type="text" name="materialesEvaluacionIntermediaObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Evaluación final (cuestionario)</td>
+                <td><input type="number" name="materialesEvaluacionFinalCantidad" value="1"></td>
+                <td><input type="radio" name="materialesEvaluacionFinal" value="Sí" checked></td>
+                <td><input type="radio" name="materialesEvaluacionFinal" value="No"></td>
+                <td><input type="text" name="materialesEvaluacionFinalObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Evaluación de satisfacción</td>
+                <td><input type="number" name="materialesEvaluacionSatisfaccionCantidad" value="1"></td>
+                <td><input type="radio" name="materialesEvaluacionSatisfaccion" value="Sí" checked></td>
+                <td><input type="radio" name="materialesEvaluacionSatisfaccion" value="No"></td>
+                <td><input type="text" name="materialesEvaluacionSatisfaccionObservaciones"></td>
+            </tr>
+        </table>
+        <h3>SERVICIOS</h3>
+        <table border="1">
+            <tr>
+                <th>Elemento</th>
+                <th>Cantidad</th>
+                <th>Sí</th>
+                <th>No</th>
+                <th>Observaciones</th>
+            </tr>
+            <tr>
+                <td>Café (Bote)</td>
+                <td><input type="number" name="serviciosCafeCantidad" value="1"></td>
+                <td><input type="radio" name="serviciosCafe" value="Sí" checked></td>
+                <td><input type="radio" name="serviciosCafe" value="No"></td>
+                <td><input type="text" name="serviciosCafeObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Galletas (Paquete)</td>
+                <td><input type="number" name="serviciosGalletasCantidad" value="1"></td>
+                <td><input type="radio" name="serviciosGalletas" value="Sí" checked></td>
+                <td><input type="radio" name="serviciosGalletas" value="No"></td>
+                <td><input type="text" name="serviciosGalletasObservaciones"></td>
+            </tr>
+        </table>
+
+        <h3>MEDIDAS DE SALUD/SEGURIDAD/HIGIENE/PROTECCIÓN CIVIL</h3>
+        <table border="1">
+            <tr>
+                <th>Elemento</th>
+                <th>Cantidad</th>
+                <th>Sí</th>
+                <th>No</th>
+                <th>Observaciones</th>
+            </tr>
+            <tr>
+                <td>Ruta de evacuación señalizada</td>
+                <td><input type="number" name="medidasRutaEvacuacionCantidad" value="1"></td>
+                <td><input type="radio" name="medidasRutaEvacuacion" value="Sí" checked></td>
+                <td><input type="radio" name="medidasRutaEvacuacion" value="No"></td>
+                <td><input type="text" name="medidasRutaEvacuacionObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Cubrebocas disponibles</td>
+                <td><input type="number" name="medidasCubrebocasCantidad" value="1"></td>
+                <td><input type="radio" name="medidasCubrebocas" value="Sí" checked></td>
+                <td><input type="radio" name="medidasCubrebocas" value="No"></td>
+                <td><input type="text" name="medidasCubrebocasObservaciones"></td>
+            </tr>
+            <tr>
+                <td>Aplicación de gel antibacterial en manos</td>
+                <td><input type="number" name="medidasGelAntibacterialCantidad" value="1"></td>
+                <td><input type="radio" name="medidasGelAntibacterial" value="Sí" checked></td>
+                <td><input type="radio" name="medidasGelAntibacterial" value="No"></td>
+                <td><input type="text" name="medidasGelAntibacterialObservaciones"></td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <input type="submit" value="Generar PDF">
+    </form>
+</body>
+</html>
