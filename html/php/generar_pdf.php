@@ -1,6 +1,6 @@
 <?php
 // Incluye la biblioteca TCPDF
-require_once('tcpdf/tcpdf.php');
+require_once('https://www.tsintalab.com/html/php/tcpdf/tcpdf.php');
 
 // Recupera los datos del formulario
 $nombreCurso = $_POST['nombreCurso'];
