@@ -37,7 +37,7 @@ th, td {
     text-align: center;
 }
 
-input[type="button"] {
+input[type="submit"] {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -47,6 +47,6 @@ input[type="button"] {
     cursor: pointer;
 }
 
-input[type="button"]:hover {
+input[type="submit"]:hover {
     background-color: #0056b3;
 }
