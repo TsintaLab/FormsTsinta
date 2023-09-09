@@ -1,4 +1,4 @@
-document.getElementById('generar PDF').addEventListener('click', function () {
+document.getElementById('Generar PDF').addEventListener('click', function () {
     const doc = new jsPDF();
     doc.text('Mi Página Web', 10, 10);
     doc.text(document.querySelector('body').innerText, 10, 20);
