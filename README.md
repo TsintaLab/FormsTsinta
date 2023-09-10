@@ -1,2 +1,2 @@
-![BAnnerTs](https://www.tsintalab/images/BannerTallerTs.gif)
+![BannerTs](images/BannerTallerTs.gif)
 # FormsTsinta
